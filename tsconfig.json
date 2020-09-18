@@ -16,8 +16,14 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "esnext"
+    "target": "esnext",
+     "rootDir": ".",
+     "typeRoots": ["node_modules/@types", "types"],
+     "plugins": [{ "name": "nexus/typescript-language-service" }]
   },
   "exclude": ["node_modules"],
-  "include": ["**/*.ts", "**/*.tsx"]
+  "include": ["**/*.ts", "**/*.tsx", ".", "types.d.ts"]
+
+
+  
 }
